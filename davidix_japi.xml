@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" method="upgrade" type="plugin" group="system">
+	<name>plg_system_davidix_japi</name>
+	<author>davidix</author>
+	<creationDate>2021 feb 20</creationDate>
+	<copyright></copyright>
+	<license></license>
+	<authorEmail>d.bereihi@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_DAVIDIX_JAPI_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="davidix_japi">davidix_japi.php</filename>
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+	</files>
+
+	<config>
+	</config>
+</extension>
