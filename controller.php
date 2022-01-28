@@ -4,7 +4,7 @@
  * @package    davidix
  * @subpackage Base
  */
-//-- No direct access
+
 defined('_JEXEC') || die('=;)');
 
 /**
@@ -43,7 +43,7 @@ class dixRest  {
 			$items = JModelLegacy::getInstance($this->mod_name, $this->moc_name);
 			
 			//populateState
-			/***************************************************/
+			/***********************************************/
 			$items->setState('filter.category_id', $app->input->get('catid'));
 			
 			$items->setState('filter.tag', $app->input->get('filter_tag', 0, 'uint'));			
@@ -66,7 +66,7 @@ class dixRest  {
 
 			$items->setState('layout', $app->input->getString('layout'));
 			//populateState
-			/***************************************************/
+			/***********************************************/
 			$res = $items->getItems();
 			$doc=JFactory::getDocument();
 			$doc->setTitle("OK");
@@ -115,7 +115,6 @@ class dixRest  {
 
 		$itemsCat->setState('filter.parentId', $app->input->getInt('id'));
 
-
 		//$ArticlesCat->setState('params', $app->getParams());
 		$user = JFactory::getUser();
 
@@ -128,7 +127,7 @@ class dixRest  {
 
 		$itemsCat->setState('layout', $app->input->getString('layout'));
 		//populateState
-		/***************************************************/
+		/***********************************************/
 		$baz = $itemsCat->getItems();
 		$doc=JFactory::getDocument();
 		$doc->setTitle("OK");
