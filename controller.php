@@ -135,8 +135,6 @@ class dixRest  {
 		echo json_encode($baz);
 		jexit();
 	}
-	
-	
 	public function getTyp()
 	{
 		$app = JFactory::getApplication();
