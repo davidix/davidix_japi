@@ -91,8 +91,6 @@ class dixRest  {
 				break;
 			}
 			
-			
-			
 			JModelLegacy::addIncludePath(JPATH_SITE.'/components/'.$this->com_name.'/models', $this->moc_name);
 			$item = JModelLegacy::getInstance($this->mos_name, $this->moc_name);
 			
