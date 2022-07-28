@@ -13,8 +13,8 @@ defined('_JEXEC') || die('=;)');
  * @package    davidix
  * @subpackage Controllers
  */
-class dixRest  {
-
+class dixRest  
+{
 
 		public	$com_name	=	"com_content";		//Component Name
 		public	$moc_name	=	"ContentModel";		//Model Class Name
@@ -63,7 +63,6 @@ class dixRest  {
 			}
 
 			$items->setState('filter.language', JLanguageMultilang::isEnabled());
-
 			$items->setState('layout', $app->input->getString('layout'));
 			//populateState
 			/***********************************************/
@@ -101,7 +100,6 @@ class dixRest  {
 			echo json_encode($res);
 			jexit();
 	}
-	
 	
 	public function itemsCat()
 	{	
@@ -167,8 +165,6 @@ class dixRest  {
 			$this->mod_name	=	"Tags";						//Model Name
 			$this->mos_name	=	"Tag";						//Model Name Single 
 			break;
-			
-			
 		}
 	}
 
