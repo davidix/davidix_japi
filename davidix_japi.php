@@ -2,6 +2,8 @@
 defined("_JEXEC") or die("Restricted access");
 require('controller.php');
 
+
+
 class plgSystemDavidix_japi extends JPlugin
 {
 	 public function onAfterInitialise()
